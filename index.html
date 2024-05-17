@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Santos_FinalProject</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(https://forum.huawei.com/enterprise/api/file/v1/small/thread/746048428674256896.jpeg?appid=esc_en) center center/cover no-repeat fixed;
+        }
+
+        header {
+            background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/06/Download-Free-Technology-Backgrounds.jpg');
+            background-size: cover;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+
+        header h1 {
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            background-color: #666;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+
+        nav a:hover {
+            background-color: #999;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .card h2 {
+            color: #333;
+        }
+
+        .card p {
+            color: #666;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        a:hover {
+            color: #1a0dab;
+        }
+
+        .icon {
+            margin-right: 8px;
+        }
+
+        .dropdown {
+            display: none;
+            margin-top: 10px;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .dropdown-btn {
+            background-color: #0047AB;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            outline: none;
+            text-align: left;
+            width: 100%;
+            font-size: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px; /* Add space between buttons */
+        }
+
+        .dropdown-btn:hover {
+            background-color: #1a0dab;
+        }
+
+        .dropdown-btn:focus {
+            background-color: #1a0dab;
+        }
+
+        .dropdown-btn .dropdown-arrow {
+            font-size: 12px;
+            margin-left: 10px;
+        }
+
+        .dropdown-header {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #0047AB;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown a:hover {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CPE232 - Managing Enterprise Servers</h1>
+    </header>
+    <nav>
+        <a href="#AboutMe">About Me</a>
+        <a href="#HandsOnActivities">Hands-on Activities & Examinations</a>
+        <a href="#ReflectionLearnings">Reflection and Learnings</a>
+    </nav>
+    <section id="AboutMe" class="container">
+        <div class="card">
+            <h2>About Me</h2>
+            <p>I'm Lance Gebrielle A. Santos, completing my third year of Computer Engineering and moving into my fourth year at the Technological Institute of the Philippines.</p>
+        </div>
+    </section>
+    <section id="HandsOnActivities" class="container">
+        <div class="card">
+            <h2>Hands-on Activities & Examinations</h2>
+            <p>Below are the tasks and assessments completed throughout our Managing Enterprise Server course.</p>
+
+            <button class="dropdown-btn" id="prelim-period">
+                Preliminary Period
+                <span class="dropdown-arrow">&#9660;</span>
+            </button>
+            <ul class="dropdown" id="prelim-dropdown">
+                <li><a href="https://github.com/santoslance/CPE232_HOA1">CPE232_HOA1.1 - Creating Virtual Machine</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA2">CPE232_HOA2.1 - SSH Key-Based Authentication and GIT Setup</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA3">CPE232_HOA3.1 - Install SSH server on CentOS or RHEL 8</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA4">CPE232_HOA4.1 - Ansible Basics</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA5">CPE232_HOA5.1 - Implement Ansible Roles in Playbook</a></li>
+                <li class="dropdown-header"></li>
+                <li><a href="https://github.com/santoslance/Santos_PrelimExam">CPE232_Prelimary_Exam</a></li>
+            </ul>
+
+            <button class="dropdown-btn" id="midterm-period">
+                Midterm Period
+                <span class="dropdown-arrow">&#9660;</span>
+            </button>
+            <ul class="dropdown" id="midterm-dropdown">
+                <li><a href="https://github.com/santoslance/CPE232_HOA6">CPE232_HOA6.1 - Targeting Specific Nodes</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA7">CPE232_HOA7.1 - Managing Files and Creating Roles in Ansible</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA8">CPE232_HOA8.1 - Install, Configure, and Manage Enterprise Availability Monitoring via Ansible</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA9">CPE232_HOA9.1 - Install, Configure, and Manage Enterprise Availability Performance via Ansible</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA10">CPE232_HOA10.1 - Install, Configure, and Manage Enterprise Log Monitoring via Ansible</a></li>
+                <li><a href="https://github.com/santoslance/CPE_MIDTERM_SANTOS">SCPE232_Midterm_Exam</a></li>
+            </ul>
+
+            <button class="dropdown-btn" id="final-period">
+                Final Period
+                <span class="dropdown-arrow">&#9660;</span>
+            </button>
+            <ul class="dropdown" id="final-dropdown">
+                <li><a href="https://github.com/santoslance/CPE232_HOA11">CPE232_HOA11.1 - Containerization</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA12">CPE232_HOA12.1 - Build a Sample Web App in a Docker Container</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA13">CPE232_HOA13.1 - OpenStack Prerequisite Installation</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA14">CPE232_HOA14.1 - OpenStack Installation (Keystone, Glance, Nova)</a></li>
+                <li><a href="https://github.com/santoslance/CPE232_HOA15">CPE232_HOA15.1 - OpenStack Installation (Neutron, Horizon, Cinder)</a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="ReflectionLearnings" class="container">
+        <div class="card">
+            <h2>Reflection </h2>
+            <p>Taking this course in enterprise server management has been an eye-opening experience for me. I've learned not only the technical aspects but also the importance of efficient management in large-scale IT infrastructures. One of the key takeaways for me is the significance of automation tools like Ansible in streamlining server management tasks. While it offers immense benefits in terms of time management and ease of administration, I also became aware of its resource requirements, which is crucial in planning and implementing such solutions.</p>
+            
+            <h2>Learnings</h2>
+            <p>Throughout the course, I've gained a solid understanding of server administration, network configuration, and database optimization. The hands-on experience with Ansible has been particularly valuable, as it allowed me to grasp the concepts of infrastructure as code and automation in real-world scenarios. By delving into the intricacies of writing and executing Ansible playbooks, I've honed my skills in troubleshooting and debugging, enabling me to identify and rectify errors efficiently.</p>
+            <p>Moving forward, I plan to continue exploring and refining my skills in enterprise server management. This course has provided me with a strong foundation that I can build upon as I progress in my journey as a computer engineering student. I am confident that the knowledge and skills acquired will serve me well in navigating the complexities of IT environments and contributing effectively to future projects and endeavors.</p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Lance Santos</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.dropdown-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                const dropdown = this.nextElementSibling;
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                const arrow = this.querySelector('.dropdown-arrow');
+                arrow.innerHTML = dropdown.style.display === 'block' ? '&#9650;' : '&#9660;';
+            });
+        });
+    </script>
+</body>
+
+</html>
+
